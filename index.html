@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicseben</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <h1><span>sicseben</span></h1>
+
+        <div class="controls">
+            <button id="startButton">Activar cámara</button>
+            <button id="stopButton" disabled>Detener cámara</button>
+        </div>
+
+        <section class="camera-container">
+            <video id="video" autoplay playsinline muted></video>
+            <canvas id="canvas"></canvas>
+
+            <div id="status" class="status"></div>
+
+            <div id="result" class="result">
+                <img src="assets/67.jpg" alt="Six Seven">
+            </div>
+        </section>
+
+    </main>
+
+    <audio id="sound" src="assets/67.mp3"></audio>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
